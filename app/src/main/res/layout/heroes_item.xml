@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="135dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/app_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ahmad_dahlan" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Ahmad Dahlan" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:maxLines="12"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"
+            tools:text="Salah satu cicit K.H. Ahmad Dahlan mengklaim keluarga besarnya mendukung Prabowo Subianto dan Sandiaga Uno di Pilpres 2019. Sejarah mencatat, sang pencerah punya lebih dari satu istri sehingga keturunannya pun amat banyak. Sementara itu, Muhammadiyah sebagai institusi telah menegaskan bersikap netral dalam pesta demokrasi nanti. “Jadi memang kami dari keluarga [K.H .Ahmad Dahlan] sudah sepakat mendoakan untuk benar-benar Prabowo jadi presiden. Lima tahun lalu kami juga mendoakan Prabowo untuk jadi orang nomor satu,” kata Jam'an, salah seorang cicit Ahmad Dahlan. Jam’an mengucapkan dukungannya saat Sandiaga Uno mengunjungi Kantor Pimpinan Daerah Muhammadiyah Kota Yogyakarta, Jumat (22/3/2019). Namun, apakah keberpihakan Jam’an kepada Prabowo-Sandiaga telah diamini pula oleh seluruh anggota keluarga besar Ahmad Dahlan, juga warga Muhammadiyah?" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
